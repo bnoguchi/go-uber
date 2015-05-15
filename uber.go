@@ -136,6 +136,12 @@ type Price struct {
 	// http://www.technologyreview.com/review/529961/in-praise-of-efficient-price-gouging/
 	// eg: 1
 	SurgeMultiplier float64 `json:"surge_multiplier"`
+	
+	// Expected activity duration (in seconds)
+	Duration int `json:"duration"`
+	
+	// Expected activity distance (in miles)
+	Distance float64 `json:"distance"`
 }
 
 // Time contains information about the estimated time of arrival for a product at a
